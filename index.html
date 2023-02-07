@@ -1,749 +1,1018 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Future Business</title>
-    <link rel="shortcut icon" type="image/png" href="C:\Users\User\Documents\DCET\web tech\Diana's cake and pastry\logo.png">
-
-    <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="style.css">
+    <!-- swiper cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
 </head>
 <body>
-    <script>
-        alert("Welcome to my shop!\nEnjoy")
-      </script>
 
-<!-- header section start page -->
-
+<div>
 <header class="header">
-    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> Diana's Cake and Pastry </a>
 
-    <nav class="navbar">
-        <a href="C:\Users\User\Documents\DCET\web tech\Diana's cake and pastry\index.html">Home</a>
-        <a href="./shop.html" target="_blank">Shop</a>
-        <a href="./about.html" target="_blank">About Us</a>
-        <a href="./cakes.html" target="_blank">Cakes</a>
-        <a href="./pastries.html" target="_blank">Pastries</a>
-        <a href="./rating.html" target="_blank">Rate Us</a>
-    </nav>
+    <a href="#" class="logo"> <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328278772_873583747248615_587101723913674914_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeF4wYIUO9ZeJxX2z6vGtxftF-k4giJu1wAX6TiCIm7XAOTs0JUvIhZPo9-1HiVNSk50q3qaqQwqVyeb3Mahmkjn&_nc_ohc=0Ofa11xpdhAAX-bfnFV&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfBtUvuItf_iO0cbGH0k6cVXiRXxfEGTsNtQQm7IiUt5og&oe=63DCEE04" />
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+        </nav>
 
-    <div class="icons">
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <div id="search-btn" class="fas fa-search"></div>
-        <div id="cart-btn" class="fas fa-shopping-cart"></div>
-        <div id="login-btn" class="fas fa-user"></div>
-    </div>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        </div>
 
+        <div class="shopping-cart">
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328272707_721868622902651_6199339802581797863_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFiM1PrSOOUBFFwRuqFRDWtzwy-sG3MkIfPDL6wbcyQhxhPwGohdzXrpDbs96vfwAfMcnKeZA28RPcwxpzemk-V&_nc_ohc=zFjUgKoxuvIAX8lGKS2&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfB9Zo7835dO_ki4t7Ur5EPaDdI7lpQRn62H1hpV0WiZ3Q&oe=63DBA2DF" alt="">
+                <div class="content">
+                    <h3>Three pieces Doughnut</h3>
+                    <span class="price"> 89 PHP/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328083853_715717860282395_2535729908884530333_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGf24NoFyd1lJ8zx-V8MWPrlzJXyNhb5lKXMlfI2FvmUoxNQ-r7vUTxm-U997GNbLQjzI4sWnXs9_4tzmjC2fME&_nc_ohc=GY1Cr5xpTiwAX91KSGS&tn=d0BlNvO9lL0X-pbT&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfBaY-1e3aXCc02sJNBy2ID0u3CfB6uSNOlnnMD7Kzc6xw&oe=63DBE175" alt="">
+                <div class="content">
+                    <h3>Assorted Dougnut</h3>
+                    <span class="price"> 159 PHP/-</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328316353_1183146542570229_3323173394314538501_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG-c4eHxGwMmVFdssVZ4aLnTG6ZSBgjm5pMbplIGCObmqe-fcXvI2hsZEvKebeDx6ycdKRVdEESkUCp_2mKtLEL&_nc_ohc=DQpnpDtYJMgAX8NwSs2&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfDglpU3pJwRwL3EIue4SysTXRN04oHyhEiUp-8ZKW8E8g&oe=63DCE8BF" alt="">
+                <div class="content">
+                    <h3>All flavors Doughnut</h3>
+                    <span class="price"> 199 PHP/-</span>
+                </div>
+            </div>
+
+            <div class="total">total: 447 PHP </div>
+            <a href="#" class="btn"> Check Out</a>
+
+        </div>
 
 </header>
- 
-<!-- home section start -->
-    
+
+<!-- header end -->
+<!-- home -->
+
 <section class="home" id="home">
-    <div class="slides-container">
 
-        <div class="slide active">
-            <div class="content">
-                <span>Have a Cake-A-Licious</span>
-                <h3>upto 50% off</h3>
-                <a href="#" class="btn">Shop Now</a>
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide"> style= <img src= "https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/327760831_512677314340318_4855706055795506781_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeEk49HzeTvOtRlmQXyH2WFDS8Hf-NuBmhtLwd_424GaG6AFviBTbMfjckWHLFYW9Qx65uRog4cXQ4zi3BEOBkHo&_nc_ohc=t0rWnUbmCc8AX-_1U6A&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfADluzFjvjv3ga5RrTi-kOXLH9EmtYcTs03q5lMrMNK0A&oe=63DD643A" no-repeat;">
+                <div class="content">
+                    <img src="images/slider_icons.png" alt="">
+                    <h3 style="background-color:black;" Planetary doughnuts </h3>
+                    <a href="#" class="btn"> Order Now</a>
+                    
+                </div>
+                </div>
+           <div class="swiper-slide slide"> style= <img src="file:///C:/Users/Sheila%20Joy/Desktop/Donut/bg1.jpg" no-repeat;">
+                    <div class="content">
+                    <img src="images/slider_icons.png" alt="">
+                     <h3 style="background-color:black;" Planetary doughnuts </h3>
+                    <a href="#" class="btn"> Order Now</a>
+                    
+                </div>
+
             </div>
-            <div class="img">
-                <img src="home-img-1.png" alt="">
-            </div>
+
         </div>
-
-        <div class="slide">
-            <div class="content">
-                <span>Have a Cake-A-Licious</span>
-                <h3>upto 50% off</h3>
-                <a href="#" class="btn">Shop Now</a>
-            </div>
-            <div class="img">
-                <img src="home-img-2.png" alt="">
-            </div>
-        </div>
-
-        <div class="slide">
-            <div class="content">
-                <span>Have a Cake-A-Licious</span>
-                <h3>upto 50% off</h3>
-                <a href="#" class="btn">Shop Now</a>
-            </div>
-            <div class="img">
-                <img src="home-img-3.png" alt="">
-            </div>
-        </div>
-
-    </div>
-    <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
-    <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
-
+           
+        
 </section>
 
+<!-- home end -->
 
-<section class="banner-container">
+<!-- about us -->
 
-    <div class="banner">
-        <img src="banner-1.jpg" alt="">
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about </span> us</h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/327192215_607543957768781_1785377561756077851_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGfflmizIRfFjsAlJL_VESln-Cd3JeH4qif4J3cl4fiqADU-1-XM2K_G_o3FqDgrpMYK8jbOgMM-46yuOGhmSxH&_nc_ohc=ztB5csP4jO8AX_4W1jo&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfBlXwujjia134Mq_SqiJmH1tubEVaXKWn7s7mH20eVz1g&oe=63DD2792" alt="">
+        </div>
+
         <div class="content">
-        <span>limited sales</span>
-        <h3>upto 50% off</h3>
-        <a href="#" class="btn">shop now</a>
-    </div>
-    </div>
-
-    <div class="banner">
-        <img src="banner-2.jpg" alt="">
-        <div class="content">
-        <span>limited sales</span>
-        <h3>upto 50% off</h3>
-        <a href="#" class="btn">shop now</a>
-    </div>
-    </div>
-
-    <div class="banner">
-        <img src="banner-3.jpg" alt="">
-        <div class="content">
-        <span>limited sales</span>
-        <h3>upto 50% off</h3>
-        <a href="#" class="btn">shop now</a>
-    </div>
+            <span>Welcome to my Shop</span>
+            <h3>I'm Shaina Borbon, the owner of this Planetary Doughnut Shop. </h3>
+            <p> My product is unique in terms of design and tastes.A doughnut or donut (/doʊnət/) is a type of food made from leavened fried dough. It is a planetary doughnut. It is prepared in various forms as a sweet snack that can be homemade.</p>
+            <p>Our Solar System doughnuts have a unique flavor and an elegant design. We have eight (donut planets these are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</p>
+        </div>
     </div>
 
 </section>
 
+<!-- about us end-->
 
-<!-- category start  -->
+<!-- menu -->
 
-<div class="heading">
-    <h1>our shop</h1>
-    </div>
+<section class="menu" id="menu">
 
-<section class="category">
-    
-<h1 class="title"> our <span>category</span> <a href="#">view all >></a> </h1>
+    <h1 class="heading"> our <span>menu</span></h1>
 
-<div class="box-container">
-
-    <a href="#" class="box">
-        <img src="cat-1.jpg" alt="">
-        <h3>fresh cupcake</h3>
-    </a>
-
-    <a href="#" class="box">
-        <img src="cat-2.jpg" alt="">
-        <h3>cookies</h3>
-    </a>
-
-    <a href="#" class="box">
-        <img src="cat-3.jpg" alt="">
-        <h3>brown bread</h3>
-    </a>
-
-    <a href="#" class="box">
-        <img src="cat-4.jpg" alt="">
-        <h3>Dark chocolate</h3>
-    </a>
-
-    <a href="#" class="box">
-        <img src="cat-5.jpg" alt="">
-        <h3>Wheat</h3>
-    </a>
-
-
-</div>
-
-</section>
-
-
-<!-- products section -->
-
-<section class="products">
-    
-    <h1 class="title"> our <span>products</span> <a href="#">view all >></a> </h1>
-    
     <div class="box-container">
 
         <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328272707_721868622902651_6199339802581797863_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFiM1PrSOOUBFFwRuqFRDWtzwy-sG3MkIfPDL6wbcyQhxhPwGohdzXrpDbs96vfwAfMcnKeZA28RPcwxpzemk-V&_nc_ohc=zFjUgKoxuvIAX8lGKS2&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfB9Zo7835dO_ki4t7Ur5EPaDdI7lpQRn62H1hpV0WiZ3Q&oe=63DBA2DF" alt="">
+            <h3>3 pieces of Doughnut</h3>
+            <p>Flavor: Mars (Strawberry), Uranus (Blueberry), and Mercury (Cookies and Cream).</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-whole-half-alt"></i>
             </div>
-            <div class="img">
-                <img src="product-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>berries citrus fruits cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
+            <div class="price">89 PHP</div>
+            <a href="#" class="btn"> Add to Cart</a>
         </div>
 
         <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328083853_715717860282395_2535729908884530333_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGf24NoFyd1lJ8zx-V8MWPrlzJXyNhb5lKXMlfI2FvmUoxNQ-r7vUTxm-U997GNbLQjzI4sWnXs9_4tzmjC2fME&_nc_ohc=GY1Cr5xpTiwAX91KSGS&tn=d0BlNvO9lL0X-pbT&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfBaY-1e3aXCc02sJNBy2ID0u3CfB6uSNOlnnMD7Kzc6xw&oe=63DBE175" alt="">
+            <h3>Assorted Doughnut</h3>
+            <p>Flavor:Mars (Strawberry),Neptune (Rocky Road),Mercury (Cookies and Cream), Jupiter (Ube),Saturn (Mocha), and Venus (Mango Graham).</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
             </div>
-            <div class="img">
-                <img src="product-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>resh mellow sp color cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
+            <div class="price"> 159 PHP</div>
+            <a href="#" class="btn"> Add to Cart</a>
         </div>
 
         <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328316353_1183146542570229_3323173394314538501_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG-c4eHxGwMmVFdssVZ4aLnTG6ZSBgjm5pMbplIGCObmqe-fcXvI2hsZEvKebeDx6ycdKRVdEESkUCp_2mKtLEL&_nc_ohc=DQpnpDtYJMgAX8NwSs2&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfDglpU3pJwRwL3EIue4SysTXRN04oHyhEiUp-8ZKW8E8g&oe=63DCE8BF" alt="">
+            <h3>All flavors of Doughnut</h3>
+            <p>Flavor:Mars (Strawberry),Neptune (Rocky Road),Mercury (Cookies and Cream), Jupiter (Ube),Saturn (Mocha), Venus (Mango Graham),Uranus (Blueberry), and Earth (Choconut).</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
             </div>
-            <div class="img">
-                <img src="product-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>Rose color sparkel cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
+            <div class="price">199 PHP</div>
+            <a href="#" class="btn"> Add to Cart</a>
         </div>
 
         <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/327757955_626141536185600_868089333755484139_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGvtBVAwOIHQHc47gTHmnzNf6t-4MEtK-J_q37gwS0r4n8LfmGj8vOek1cHfxOBmPCeXaifunpDvvDXgXL0q9x_&_nc_ohc=UgCaADT8vKUAX8pyiPY&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfC98G4xKTPBVCkmIjIoDpZtnOs9A0jOjU4dROPqBftd6Q&oe=63DCF535" alt="">
+            <h3>No. 1 Best-selling Planetary Donuts</h3>
+            <p>Mercury (Cookies and Cream) </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
-            <div class="img">
-                <img src="product-4.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>strawberry nutella cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
+            <div class="price">32 PHP</div>
+            <a href="#" class="btn"> Add to Cart</a>
         </div>
 
         <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328251141_5858650620838259_1793217504168905051_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeF0akvpuMHTcdbOu1dEvXRlg9MgBMu7-JWD0yAEy7v4lYso236fXcw4JFTpbqxQ7axMt7NA3dPhEJK-lH2MzgTo&_nc_ohc=8NiZTtbC83IAX8_SVcV&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfCQygXob3h9ydP00lDUX2tUI3yItYK8kuLixzJW5WCAwg&oe=63DD8A2B" alt="">
+            <h3>No.2 Best-selling Planertary Donuts </h3>
+            <p>Earth (Choconut)</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
-            <div class="img">
-                <img src="product-5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>green bread spar cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
+            <div class="price">32 PHP</div>
+            <a href="#" class="btn"> Add to Cart</a>
         </div>
 
         <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/328112008_746404106614061_807455571180316838_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGnrreemhTYvews_pE6IMnIx1qw4lWjygTHWrDiVaPKBAMSxWR2IR4_2kGVL6PWOAlHxSU1mqHce0MowMDDsufd&_nc_ohc=BlTzL5vHizcAX-3ZW5s&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfDVRCVSuxo7mNaosgj8SXQK9der0gaDeliByVl0d1n23g&oe=63DCD090" alt="">
+            <h3>No.3 Best-selling Planetary Donuts</h3>
+            <p>Venus (Mango Graham)</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
-            <div class="img">
-                <img src="product-6.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>red berries chocolate cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
+            <div class="price"> 32 PHP</div>
+            <a href="#" class="btn"> Add to Cart</a>
         </div>
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="img">
-                <img src="product-7.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>strawberry red spar cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="img">
-                <img src="product-8.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>dark chocolate nutella cake</h3>
-                <div class="price">$19.99</div>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-            </div>
-        </div>
-</div>
-</section>
-
-
-<!-- about section start -->
-<div class="heading">
-    <h1>Want some?</h1>
-    </div>
-
-<section class="about">
-    <div class="img">
-         <img src="about-img.jpg" alt="">
-    </div>
-
-    <div class="content">
-        <span>welcome to our products</span>
-        <h3>Cake-A-Licious products</h3>
-        <p>"Help celebrate a special day or commemorate a significant occasion with a sweet treat from The Cake Shop Bakery. Whether you are searching for a special birthday cake, or simply looking for a sweet ending to an everyday meal, The Cake Shop is sure to have something freshly baked to suit your mood. We are proud to offer a wide variety of freshly baked goods daily, including gourmet cookies, fresh apple cake, cheesecake slices, chocolate eclairs, strawberry torte, pound cake, lemon bars, decadent brownies, shortbread, and over 20 flavors of cupcakes that no one can resist.".</p>
-        <a href="#" class="btn">read more</a>
-    </div>
-</section>
-
-<!-- gallery section start -->
-
-<section class="gallery">
-    <h1 class="title"> our <span>gallery</span> <a href="#">view all >></a> </h1>
-    <div class="box-container">
-
-        <div class="box">
-            <img src="gallery-img-1.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="gallery-img-2.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="gallery-img-3.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="gallery-img-4.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="gallery-img-5.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="gallery-img-6.jpg" alt="">
-            <div class="icons">
-                <a href="#" class="fas fa-eye"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-share-alt"></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- client section start -->
-
-<div class="heading">
-    <h1>client's review</h1>
-</div>
-
-<section class="info-container">
-
-    <div class="info">
-        <img src="icons-1.png" alt="">
-        <div class="content">
-            <h3>fast delivery</h3>
-            <span>within 30 minutes</span>
-        </div>
-    </div>
-
-    <div class="info">
-        <img src="icons-2.png" alt="">
-        <div class="content">
-            <h3>24 / 7 available</h3>
-            <span>call us anytime</span>
-        </div>
-    </div>
-
-    <div class="info">
-        <img src="icons-3.png" alt="">
-        <div class="content">
-            <h3>easy payments</h3>
-            <span>cash or credit</span>
-        </div>
     </div>
 
 </section>
 
-<!-- review section start -->
+<!-- menu end-->
 
-<section class="review">
+<!-- review -->
 
-    <div class="box">
-        <div class="user">
-            <img src="jong.jpg" alt="">
-            <div class="info">
-                <h3>Lee Jong Suk</h3>
-                <span>happy client</span>
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span> review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/295009270_1450424168760401_1333219419466038791_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_eui2=AeFejYn53VtZqttqzWtjS8ajb8EokZSZpH5vwSiRlJmkfnkDj95BYcwo1BK-JIF_55HVllV3rrJ_qkTlsNlPDhSU&_nc_ohc=A0DcFh5_awIAX_V_IRP&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfBHE9i-qQ4OxeDun2vkXwmiRyz3eKtMbeoEcxzo9La3Yg&oe=63E50F98" alt="sana">
+                <p>The donut is good; their dough and filling are delicious, and my favorite filling is cookies and cream.</p>
+                <h3>VJ Ramirez</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-        </div>
-        <p>Annyeong Haseyo!! This cake is so sarap! Buy now!</p>
-    </div>
 
-    <div class="box">
-        <div class="user">
-            <img src="pic-2.png" alt="">
-            <div class="info">
-                <h3>jenna bey</h3>
-                <span>happy client</span>
+            <div class="swiper-slide slide">
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/329117092_912952319731589_3550814674967872898_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFRjOzV4qDRg2fIDEwrNuawbPKWJJtMSads8pYkm0xJp31iZFIsiVJ45W5pOBX_-g5kZ2PyjYzqZVvA2adGXmkU&_nc_ohc=YtvDmHXau4UAX-LBdjT&tn=Y-A3NpoPoOOtXYtn&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfBSGhwwE2X7FeV3zi7fK4e1L72JhmlFHvvMANW8zT3HOQ&oe=63E5DC8F">
+                <p>Thank you for the excellent service provided by your shop; the doughnut were especially delicious and not too sweet, plus they was a variety to choose from.</p>
+                <h3>Mica Casimero</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-        </div>
-        <p>This is so Good.</p>
-    </div>
 
-    <div class="box">
-        <div class="user">
-            <img src="tobey.jpg" alt="">
-            <div class="info">
-                <h3>Tobey Maguire</h3>
-                <span>happy client</span>
+            <div class="swiper-slide slide">
+                <img src="data:image/jpeg;base64,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" alt="doh">
+                <p>I like the variety of the donut they offer. Their flavors are also very creative. The toppings are fancy and artful.</p>
+                <h3>Doh Kyungsoo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-        </div>
-        <p>I love it but I love you more ayieee!!</p>
-    </div>
 
-    <div class="box">
-        <div class="user">
-            <img src="iu.jpg" alt="">
-            <div class="info">
-                <h3>Lee Ji Eun</h3>
-                <span>happy client</span>
+            <div class="swiper-slide slide">
+                <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t1.6435-9/71554320_3041440529216125_3103702642656804864_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeErEDsbEVZENaXRVXdT8aek2x_j0asSA4PbH-PRqxIDg6aN0f4thgCpfXVvLCMh3C0XCs2m02VXeuywLheAr2HK&_nc_ohc=LreyTc0LCPgAX9p3k4f&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfAvdDyhMdLcM93JTM_barwKQ4ji1_zRSsXmB8DfB2lDag&oe=64099203" alt="burs">
+                <p>Packaging is neat and very presentable. The donut has righ combination flavors or filling. They are helpful and have good service.</p>
+                <h3>Diana Burce</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
             </div>
-        </div>
-        <p>It's so yummy It's so sharep I love this pastries!</p>
-    </div>
 
-    <div class="box">
-        <div class="user">
-            <img src="andrew.jpg" alt="">
-            <div class="info">
-                <h3>Andrew Gray</h3>
-                <span>happy client</span>
-            </div>
         </div>
-        <p>This is so delicious! I will buy again.</p>
-    </div>
 
-    <div class="box">
-        <div class="user">
-            <img src="melai.jpg" alt="">
-            <div class="info">
-                <h3>Mela</h3>
-                <span>happy client</span>
-            </div>
-        </div>
-        <p>OH MY GOD!!! Thank you very much You know that I love chocolate cake!!</p>
     </div>
 
 </section>
 
-<!-- blog section start -->
+<!-- review end-->
+<!-- order -->
 
-<div class="heading">
-    <h1>our blogs</h1>
-</div>
+<section class="order" id="order">
 
-<section class="blogs">
-    <h1 class="title"> our <span>blogs</span> <a href="#">view all >></a> </h1>
-    <div class="box-container">
+    <h1 class="heading"> <span>Order</span> Now</h1>
 
-        <div class="box">
-            <div class="img">
-                <img src="blog-1.jpg" alt="">
-            </div>
-            <div class="content">
-            <div class="icons">
-                <a href="#"> <i class="fsa fa-calendar"></i> 10 February 2023 </a>
-                <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
-            </div>
-             <h3>Dream Cake</h3>
-             <p>Chocolate chiffon cake filled twice with whipped
-                cream garnished with chocolate shavings.</p>
-             <a href="#" class="btn">read more...</a>
-        </div>
-    </div>
-
-    <div class="box">
-        <div class="img">
-            <img src="blog-2.jpg" alt="">
-        </div>
-        <div class="content">
-        <div class="icons">
-            <a href="#"> <i class="fsa fa-calendar"></i> 10 February 2023 </a>
-            <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
-        </div>
-         <h3>Dobash Cake</h3>
-         <p>Chocolate chiffon cake with chocolate Dobash
-            filling, chocolate Dobash frosting garnished with chocolate
-            chiffon cake crumbs.</p>
-         <a href="#" class="btn">read more...</a>
-    </div>
-</div>
-
-<div class="box">
-    <div class="img">
-        <img src="chiffon.jpg" alt="">
-    </div>
-    <div class="content">
-    <div class="icons">
-        <a href="#"> <i class="fsa fa-calendar"></i> 10 February 2023 </a>
-        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
-    </div>
-     <h3>Chocolate Chiffon Cake</h3>
-     <p>This Chocolate Chiffon Cake is so versatile. At its simplest just dust the top of the cake with cocoa powder or powdered sugar. To dress it up, you can pour a rich and glossy chocolate glaze over the top, letting it drip attractively down the sides of the cake. But at its most decadent you can turn it into a layer cake, by splitting it in half and filling it with a delicious mocha flavored whipped cream</p>
-     <a href="#" class="btn">read more...</a>
-</div>
-</div>
-
-<div class="box">
-    <div class="img">
-        <img src="tiramisu.jpg" alt="">
-    </div>
-    <div class="content">
-    <div class="icons">
-        <a href="#"> <i class="fsa fa-calendar"></i> 10 February 2023 </a>
-        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
-    </div>
-     <h3>Tiramisu</h3>
-     <p>White chiffon cake pieces soaked in coffee syrup,
-        creamy tiramisu filling and chocolate pieces accented with
-        slivers of gourmet chocolate.</p>
-     <a href="#" class="btn">read more...</a>
-</div>
-</div>
-
-<div class="box">
-    <div class="img">
-        <img src="blog-5.jpg" alt="">
-    </div>
-    <div class="content">
-    <div class="icons">
-        <a href="#"> <i class="fsa fa-calendar"></i> 10 February 2023 </a>
-        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
-    </div>
-     <h3>Open Fruit</h3>
-     <p>Short paste crust with fresh and canned fruit
-        slices arranged on custard made with almond paste, topped with
-        an apricot glaze.</p>
-     <a href="#" class="btn">read more...</a>
-</div>
-</div>
-
-<div class="box">
-    <div class="img">
-        <img src="blog-6.jpg" alt="">
-    </div>
-    <div class="content">
-    <div class="icons">
-        <a href="#"> <i class="fsa fa-calendar"></i> 10 February 2023 </a>
-        <a href="#"> <i class="fsa fa-user"></i> by administrator </a>
-    </div>
-     <h3>Red Velvet</h3>
-     <p>A light German Chocolate chiffon cake with red
-        coloring and our cream cheese filling and frosting.</p>
-     <a href="#" class="btn">read more...</a>
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- contect section start -->
-
-<div class="heading">
-    <h1>Contact us</h1>
-</div>
-
-<section class="contact">
-    <div class="icons-container">
-
-        <div class="icons">
-            <i class="fas fa-phone"></i>
-            <h3>our number</h3>
-            <p>+111-222-3333</p>
-            <p>+456-786-7890</p>
+    <div class="row">
+        <div class="image">
+            <img src="https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/286033864_132330049448381_3245184106545379105_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tFeGCZ0L-2sAX9PRWd7&_nc_ht=scontent.fmnl5-2.fna&oh=00_AfAiFXFD7sOKFIf17S4dgP8CwbG_Hs7LF1xauj0H5BNl4Q&oe=63DBB66C"  alt="order">
         </div>
 
-        <div class="icons">
-            <i class="fas fa-envelope"></i>
-            <h3>our email</h3>
-            <p>Todoroki@gmail.com</p>
-            <p>Shoto@gmail.com</p>
-        </div>
+        <form action="">
 
-        <div class="icons">
-            <i class="fas fa-map-marker-alt"></i>
-            <h3>our address</h3>
-            <p>Manila, Philippines</p>
-        </div>
-
-    </div>
-
-     <div class="row">
-         <form action="">
-             <h3>get in touch</h3>
-             <div class="inputBox">
-             <input type="text" placeholder="enter your name" class="box">
-             <input type="text" placeholder="enter your email" class="box">
-            </div>
             <div class="inputBox">
-                <input type="number" placeholder="enter your number" class="box">
-                <input type="text" placeholder="enter your subject" class="box">
-               </div>
-               <textarea placeholder=" your message" cols="30" rows="10"></textarea>
-               <input type="submit" value="send message" class="btn">
-         </form>
-     </div>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+            </div>
 
-</section>
+            <div class="inputBox">
+                <input type="number" placeholder="Your Number">
+                <input type="text" placeholder="Food Name">
+            </div>
 
-<div class="space"></div>
-<!-- footer section start -->
+            <textarea placeholder="Your Address" cols="30" rows="10"></textarea>
+            <input type="submit" value="Order Now" class="btn">
 
-
-<section class="footer">    
-    <div class="box-container">
-        <div class="box">
-            <h3>quick links</h3>
-        <a href="#"> <i class="fas fa-arrow-right"></i> Home</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i>Shop</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i>About</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i> Review</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i>Blog</a>
-        <a href="#"> <i class="fas fa-arrow-right"></i>Contact</a>
-        </div>
-
-        <div class="box">
-            <h3>extra links</h3>
-            <a href="#"> <i class="fas fa-arrow-right"></i>  my order </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>  my favorite </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>  my wishlist </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>  my account </a>
-            <a href="#"> <i class="fas fa-arrow-right"></i>  terms or use </a>
-        </div>
-
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
-        </div>
-
-        <div class="box">
-            <h3>newsletter</h3>
-            <p>subscribe for latest update</p>
-            <form action="">
-            <input type="email" placeholder="enter your email address">
-            <input type="submit" value="subscribe" class="btn">
-            </form>
-            <img src="payment.png" class="payments" alt="">
-        </div>
+        </form>
     </div>
+
 </section>
 
-<section class="credit">created by CoderGuru_4_U || all rights reserved</section>
 
-    <!-- custom js file link -->
-    <script src="main.js"></script>
+<!-- order end -->
+
+<!-- footer -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>find us here</h3>
+            <p> </p>
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100008115672602" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/inashamarbn?t=ZfDnlvSRJiXHvsQlEecB9w&s=09&fbclid=IwAR3Yogh8775D6vlMPhQp8f4tSoTEKWbh3_NYTyLPJszuBe596ImskC0azwg" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/shainamarii/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/Shaina's Planetary Donut" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact us</h3>
+            <p>+929 790 6249</p>
+            <a href="#" class="link">shainamarieborbon0202@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <h3>localization</h3>
+            <p>Pinagsama Street <br> Taguig City <br> Philippines
+            </p>
+        </div>
+
+    </div>
+
+    <div class="credit">created by <span>Sheesha</span> | all rights reserved!</div>
+
+</section>
+
+<!-- footer end-->
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<!-- custom js -->
+<script src="js/script.js"></script>
 </body>
 </html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root {
+    --primary: #383221;
+    --secondary: #d46b63;
+    --white: #fff;
+    --bg-color: #f0e7e7;
+    --light-color: rgb(26, 26, 34);
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: var(--secondary);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--primary);
+}
+
+
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header .logo img {
+    width: 60px;
+    border-radius: 40px;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--primary);
+}
+
+.header .navbar a:hover {
+    color: var(--secondary);
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover {
+    color: var(--secondary);
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .shopping-cart {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: var(--white);
+}
+
+.header .shopping-cart.active {
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img {
+    height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover {
+    color: var(--secondary);
+}
+
+.header .shopping-cart .box .content h3 {
+    color: var(--primary);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content .price {
+    color: var(--secondary);
+    font-size: 1.6rem;
+}
+
+.header .shopping-cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--primary);
+}
+
+.header .shopping-cart .btn {
+    display: block;
+    margin: 1rem;
+    text-align: center;
+}
+
+
+/* header end */
+
+
+/* home */
+
+@keyframes fade {
+    0% {
+        transform: translateY(-4rem) scale(0);
+        opacity: 0;
+    }
+}
+
+.home {
+    padding: 0;
+}
+
+.home .slide {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .slide .content {
+    width: 70rem;
+    text-align: center;
+    display: none;
+}
+
+.home .slide .content img {
+    padding-top: 7.5rem;
+    animation: fade 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .2s backwards;
+}
+
+.home .slide .content h3 {
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    color: var(--white);
+    line-height: 1.3;
+    padding: 2rem 0;
+    animation: fade 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .4s backwards;
+}
+
+.home .slide .content h3 span {
+    color: var(--secondary);
+    text-transform: uppercase;
+}
+
+.home .slide .content .btn {
+    animation: fade 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .6s backwards;
+}
+
+.home .swiper-slide-active .content {
+    display: inline-block;
+}
+
+
+/* home end */
+
+
+/* about */
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .image {
+    flex: 1 1 40rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content span {
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+.about .row .content h3 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    padding-top: 1rem;
+}
+
+.about .row .content p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+
+/* about end*/
+
+
+/* menu */
+
+.menu {
+    background: var(--bg-color);
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2.5rem;
+}
+
+.menu .box-container .box {
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu .box-container .box img {
+    height: 19rem;
+    margin: 1rem 0;
+}
+
+.menu .box-container .box:hover img {
+    transform: scale(1.1);
+}
+
+.menu .box-container .box h3 {
+    color: var(--primary);
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+
+.menu .box-container .box p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.menu .box-container .box .stars {
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: gold;
+}
+
+.menu .box-container .box .price {
+    color: var(--primary);
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .price span {
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--secondary);
+}
+
+
+/* menu end */
+
+
+/* review */
+
+.review {
+    background: var(--bg-color);
+}
+
+.review .review-slider {
+    padding: 1rem;
+}
+
+.review .slide {
+    background: var(--white);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.review .slide img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.review .slide p {
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.review .slide h3 {
+    padding-bottom: .5rem;
+    color: var(--primary);
+    font-size: 2.2rem;
+}
+
+.review .slide .stars i {
+    color: gold;
+    font-size: 1.7rem;
+}
+
+
+/* review end*/
+
+
+/* order */
+
+.order .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.order .row .image {
+    flex: 1 1 30rem;
+}
+
+.order .row .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.order .row form {
+    flex: 1 1 50rem;
+    padding: 5rem;
+    padding-top: 10rem;
+}
+
+.order .row form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.order .row form .inputBox input,
+.order .row form textarea {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.7rem;
+    color: var(--light-color);
+    border-radius: .5rem;
+    width: 49%;
+    border: .1rem solid var(--primary);
+}
+
+.order .row form textarea {
+    resize: none;
+    height: 15rem;
+    width: 100%;
+}
+
+
+/* order end */
+
+
+/* footer */
+
+.footer {
+    background: var(--bg-color);
+    text-align: center;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+    text-transform: capitalize;
+    font-size: 2.2rem;
+    color: var(--primary);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+    font-size: 1.4rem;
+    line-height: 2;
+    color: var(--primary);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share {
+    margin-top: 1rem;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 10%;
+    font-size: 1.7rem;
+    background: var(--secondary);
+    color: var(--white);
+    margin-right: .3rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: var(--primary);
+}
+
+.footer .box-container .box .link {
+    font-size: 1.7rem;
+    line-height: 2;
+    color: var(--primary);
+    padding: .5rem 0;
+    display: block;
+    text-decoration: underline;
+}
+
+.footer .box-container .box .link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+.footer .credit {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--primary);
+    border-top: .1rem solid var(--primary);
+}
+
+.footer .credit span {
+    color: var(--secondary);
+}
+
+
+/* footer end */
+
+
+/* media  queries*/
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: var(--white);
+    }
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+    .header .navbar a {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+    .home .slide .content h3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .home .slide .content h3 {
+        font-size: 3rem;
+    }
+	</style>
+	<script>
+	let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () => {
+    navbar.classList.toggle('active');
+    shoppingcart.classList.remove('active');
+}
+
+let shoppingcart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () => {
+    shoppingcart.classList.toggle('active');
+    navbar.classList.remove('active');
+}
+
+window.onscroll = () => {
+    shoppingcart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+
+var swiper = new Swiper(".home-slider", {
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    grabCursor: true,
+    loop: true,
+});
+
+
+var swiper = new Swiper(".review-slider", {
+    autoplay: {
+        delay: 7500,
+        disableOnInteraction: false,
+    },
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 20,
+    centeredSlides: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
+</script>
